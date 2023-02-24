@@ -8,6 +8,7 @@
   --main-bgc: #f3f4f6;
   --main-content-font: adobe-gurmukhi, Georgia, serif;
   --header-font: classico-urw, Arial, sans-serif;
+  --menu-header-font: rgb(184, 158, 28);
   background-color: var(--main-bgc);
   letter-spacing: 1px;
 }
@@ -47,6 +48,15 @@ body {
   justify-content: center;
   color: rgb(55, 55, 55);
 }
+
+.tab-placeholder {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* Home Tab */
 
 .image-section {
   background-image: url("./../madie-hamilton-dZ-HI4EuWcA-unsplash.jpg");
@@ -90,9 +100,35 @@ body {
   padding-bottom: 3rem;
 }
 
+/* Menu Tab */
+
+.menu-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.menu-header {
+  color: var(--menu-header-font);
+  font-size: 20px;
+}
+
+.menu-item {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.menu-item-price {
+  text-align: right;
+}
+
+/* Footer */
 .footer {
   margin-top: auto;
   height: 60px;
+  width: 100%;
   border: 2px dotted grey;
   display: flex;
   justify-content: center;

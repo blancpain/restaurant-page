@@ -1,7 +1,7 @@
 const homeTabContent = () => {
   // create DOM elements
   const tabPlaceHolder = document.querySelector(".tab-placeholder");
-  const homeTab = document.createElement("home-tab");
+  const homeTab = document.createElement("div");
   const imageSection = document.createElement("div");
   const innerImageSection = document.createElement("div");
   const imageQuote = document.createElement("div");
