@@ -1,3 +1,4 @@
 import "./style.css";
+import loadPage from "./load";
 
-console.log("Hello cats!");
+loadPage();
