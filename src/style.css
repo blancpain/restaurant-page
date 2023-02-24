@@ -19,7 +19,7 @@ body {
 
 #content {
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 30% 40% 30%;
   height: 100%;
 }
 
@@ -27,6 +27,7 @@ body {
   grid-column: 2 / span 1;
   display: flex;
   flex-direction: column;
+  min-width: 600px;
   gap: 2rem;
 }
 
@@ -100,6 +101,7 @@ body {
   background-color: var(--gold-font-color);
   filter: opacity(80%);
   border: 2px dotted white;
+  cursor: pointer;
 }
 
 .text-section {
@@ -158,4 +160,22 @@ body {
 
 .button-clicked {
   color: var(--gold-font-color);
+}
+
+/* Mobile / Smaller screens */
+@media only screen and (max-width: 800px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .main {
+    padding: 1rem;
+    min-width: 300px;
+    height: 100%;
+  }
+  .footer {
+    min-height: 60px;
+  }
 }

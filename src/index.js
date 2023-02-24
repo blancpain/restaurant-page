@@ -5,6 +5,7 @@ import menuTabContent from "./menu";
 import contactTabContent from "./contact";
 
 loadPage();
+homeTabContent();
 
 const clearTabContent = () => {
   const tabPlaceholder = document.querySelector(".tab-placeholder");
