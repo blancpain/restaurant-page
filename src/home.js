@@ -1,12 +1,14 @@
 const homeTabContent = () => {
-  // create DOM elements
+  // create/select DOM elements
   const tabPlaceHolder = document.querySelector(".tab-placeholder");
+  const homeBtn = document.querySelector(".home");
   const homeTab = document.createElement("div");
   const imageSection = document.createElement("div");
   const innerImageSection = document.createElement("div");
   const imageQuote = document.createElement("div");
   const bookNowBtn = document.createElement("div");
   const textSection = document.createElement("div");
+  const photoCredit1 = document.createElement("a");
   const footer = document.createElement("div");
 
   // add classes
@@ -17,11 +19,12 @@ const homeTabContent = () => {
   bookNowBtn.classList.add("book-now");
   textSection.classList.add("text-section");
   footer.classList.add("footer");
+  homeBtn.classList.add("button-clicked");
   // build tree
   tabPlaceHolder.appendChild(homeTab);
   homeTab.appendChild(imageSection);
   homeTab.appendChild(textSection);
-  homeTab.appendChild(footer);
+  tabPlaceHolder.appendChild(footer);
   imageSection.appendChild(innerImageSection);
   innerImageSection.appendChild(imageQuote);
   innerImageSection.appendChild(bookNowBtn);
@@ -37,11 +40,14 @@ const homeTabContent = () => {
                 qui officia deserunt mollit anim id est laborum.
           `;
   }
+  footer.appendChild(photoCredit1);
 
   // text content
   imageQuote.textContent = "Best restaurant in the Balkans";
   bookNowBtn.textContent = "Book Now";
-  footer.textContent = "Footer";
+  photoCredit1.textContent = "Photo by Madie Hamilton";
+  photoCredit1.href =
+    "https://unsplash.com/@mham3816?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
 };
 
 export default homeTabContent;

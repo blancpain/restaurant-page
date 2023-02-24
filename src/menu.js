@@ -1,23 +1,28 @@
 const menuTabContent = () => {
   // create DOM elements
   const tabPlaceHolder = document.querySelector(".tab-placeholder");
+  const menuBtn = document.querySelector(".menu");
   const menuTab = document.createElement("div");
   const footer = document.createElement("div");
   const menuHeader = document.createElement("h2");
+  const gitLink = document.createElement("a");
 
   // add classes
   menuTab.classList.add("menu-tab");
   menuHeader.classList.add("menu-header");
   footer.classList.add("footer");
+  menuBtn.classList.add("button-clicked");
 
   // build tree
   tabPlaceHolder.appendChild(menuHeader);
   tabPlaceHolder.appendChild(menuTab);
   tabPlaceHolder.appendChild(footer);
+  footer.appendChild(gitLink);
 
   // text content
   menuHeader.textContent = "Steaks";
-  footer.textContent = "Footer";
+  gitLink.href = "https://github.com/blancpain/restaurant-page";
+  gitLink.textContent = "Made by Yasen Dimitrov";
 
   // menu items
   const menuItemOne = document.createElement("div");

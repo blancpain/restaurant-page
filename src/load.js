@@ -28,7 +28,7 @@ const loadPage = () => {
   menuSection.appendChild(contact);
 
   // text content
-  header.textContent = "Pavlovo Steak";
+  header.textContent = "PAVLOVO STEAK";
   home.textContent = "Home";
   menu.textContent = "Menu";
   contact.textContent = "Contact";

@@ -8,7 +8,7 @@
   --main-bgc: #f3f4f6;
   --main-content-font: adobe-gurmukhi, Georgia, serif;
   --header-font: classico-urw, Arial, sans-serif;
-  --menu-header-font: rgb(184, 158, 28);
+  --gold-font-color: rgb(184, 158, 28);
   background-color: var(--main-bgc);
   letter-spacing: 1px;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .header {
-  font-size: 45px;
+  font-size: 43px;
   text-align: center;
   padding-top: 2rem;
   font-family: var(--header-font);
@@ -47,6 +47,13 @@ body {
   font-size: 23px;
   justify-content: center;
   color: rgb(55, 55, 55);
+}
+
+.home:hover,
+.menu:hover,
+.contact:hover {
+  color: var(--gold-font-color);
+  cursor: pointer;
 }
 
 .tab-placeholder {
@@ -89,6 +96,12 @@ body {
   padding: 6px;
 }
 
+.book-now:hover {
+  background-color: var(--gold-font-color);
+  filter: opacity(80%);
+  border: 2px dotted white;
+}
+
 .text-section {
   padding-top: 3rem;
   line-height: 26px;
@@ -111,7 +124,7 @@ body {
 
 .menu-header,
 .contacts-header {
-  color: var(--menu-header-font);
+  color: var(--gold-font-color);
 }
 
 .menu-item {
@@ -138,4 +151,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+}
+
+/* General */
+
+.button-clicked {
+  color: var(--gold-font-color);
 }
