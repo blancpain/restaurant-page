@@ -109,9 +109,9 @@ body {
   margin-top: 1rem;
 }
 
-.menu-header {
+.menu-header,
+.contacts-header {
   color: var(--menu-header-font);
-  font-size: 20px;
 }
 
 .menu-item {
@@ -124,6 +124,11 @@ body {
   text-align: right;
 }
 
+/* Contacts Tab */
+
+.contacts-text {
+  margin-top: 2rem;
+}
 /* Footer */
 .footer {
   margin-top: auto;

@@ -4,10 +4,12 @@ const menuTabContent = () => {
   const menuTab = document.createElement("div");
   const footer = document.createElement("div");
   const menuHeader = document.createElement("h2");
+
   // add classes
   menuTab.classList.add("menu-tab");
   menuHeader.classList.add("menu-header");
   footer.classList.add("footer");
+
   // build tree
   tabPlaceHolder.appendChild(menuHeader);
   tabPlaceHolder.appendChild(menuTab);
@@ -16,6 +18,7 @@ const menuTabContent = () => {
   // text content
   menuHeader.textContent = "Steaks";
   footer.textContent = "Footer";
+
   // menu items
   const menuItemOne = document.createElement("div");
   const menuItemOnePrice = document.createElement("div");
